@@ -8,10 +8,14 @@
     <title>登陆界面</title>
     <link rel="stylesheet" href="./assets/css/login2.css">
     <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
+    <script src="./assets/lib/layui/layui.all.js"></script>
     <script src="./assets/lib/jquery.js"></script>
+    <script src="./assets/js/baseAPI.js"></script>
     <script src="./assets/js/login2.js"></script>
     <script>
-        $('div').siblings
+        $('div').submit(function(e) {
+            e.preventDefault
+        })
     </script>
 </head>
 
@@ -25,7 +29,7 @@
     <div class="biaodan">
         <div class="title-h"></div>
         <!-- 登录区域 -->
-        <form class="layui-form login-g" action="">
+        <form class="layui-form login-g">
             <!-- 用户区域 -->
             <div class="layui-form-item">
                 <i class="layui-icon layui-icon-username"></i>
@@ -35,11 +39,12 @@
             <!-- layui-form-item：代表表单行 -->
             <div class="layui-form-item">
                 <i class="layui-icon layui-icon-password"></i>
-                <input type="password" name="psd" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                <input type="password" name="password" required lay-verify="psd|required" placeholder="请输入密码" autocomplete="off" class="layui-input">
             </div>
             <!-- 按钮区域 -->
             <div class="layui-form-item">
-                <button type="button" class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit lay-filter="formDemo">立即提交</button>
+                <!-- 记得button要删除type=button的属性 -->
+                <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit lay-filter="formDemo">立即提交</button>
             </div>
             <!-- 超链接 -->
             <div class="layui-form-item links"><a href="javascript:;" class="links-a">去注册账号</a></div>
@@ -56,16 +61,17 @@
                 <!-- layui-form-item：代表表单行 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-password"></i>
-                    <input type="password" name="psd" required lay-verify="required" placeholder="再次确认密码" autocomplete="off" class="layui-input">
+                    <input type="password" name="password" required lay-verify="psd|required" placeholder="输入密码" autocomplete="off" class="layui-input">
                 </div>
                 <!-- 再次确认密码区域 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-password"></i>
-                    <input type="password" name="psd" required lay-verify="required" placeholder="再次确认密码" autocomplete="off" class="layui-input">
+                    <input type="password" name="repassword" required lay-verify="repsd|required" placeholder="再次确认密码" autocomplete="off" class="layui-input">
                 </div>
                 <!-- 按钮区域 -->
                 <div class="layui-form-item">
-                    <button type="button" class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit lay-filter="formDemo">立即提交</button>
+                    <!-- 记得button要删除type=button的属性 -->
+                    <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit lay-filter="formDemo">立即提交</button>
                 </div>
 
                 <!-- 超链接 -->
