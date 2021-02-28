@@ -1,0 +1,76 @@
+.layui-footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/* 字体图标 */
+
+.iconfont {
+    margin-right: 10px;
+}
+
+.layui-icon {
+    margin-right: 10px;
+}
+
+
+/* @font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot#iefix') format('embedded-opentype'), url('../fonts/iconfont.woff2') format('woff2'), url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype'), url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* //这个盒子让iframe具有了滚动条 */
+
+.layui-body {
+    overflow: hidden;
+}
+
+a {
+    transition: none;
+}
+
+
+/* 图片 */
+
+.userinfo {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 12px;
+    /* 禁止选中 */
+    user-select: none;
+}
+
+.layui-side-scroll .userinfo {
+    border: 1px solid #282b33;
+}
+
+.avater {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: teal;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    position: relative;
+    top: 4px;
+    right: 4px;
+}

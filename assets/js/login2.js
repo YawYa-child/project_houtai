@@ -37,7 +37,7 @@ $(function() {
             url: "/api/login",
             data: $(this).serialize(),
             success: function(res) {
-                if (res.status != 0) return layer.msg('登陆失败')
+                if (res.status != 0) return layui.layer.msg('登录失败')
                 console.log(res.token);
                 //跳转到后台主页
                 location.href = 'index.html'
