@@ -39,7 +39,8 @@ $(function() {
             success: function(res) {
                 if (res.status != 0) return layui.layer.msg('登录失败')
                 console.log(res.token);
-                //跳转到后台主页
+                localStorage.setItem('token', res.token)
+                    //跳转到后台主页
                 location.href = 'index.html'
             }
         });

@@ -7,14 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>后台主页</title>
     <!-- layui的JS必须写在页面的最下面 是规定 -->
-    <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
-    <link rel="stylesheet" href="./assets/fonts/iconfont.css">
-    <link rel="stylesheet" href="./assets/lib/layui/font/">
-    <link rel="stylesheet" href="./assets/css/index2.css">
-    <script src="./assets/lib/jquery.js"></script>
-    <script src="./assets/js/baseAPI.js"></script>
-    <script src="./assets/js/login2.js"></script>
-
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/assets/fonts/iconfont.css">
+    <link rel="stylesheet" href="/assets/css/index2.css">
 </head>
 
 <body class="layui-layout-body">
@@ -30,9 +25,9 @@
                         <span class="avater">A</span>个人中心
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a href="">基本资料</a></dd>
-                        <dd><a href="">更换头像</a></dd>
-                        <dd><a href="">重置密码</a></dd>
+                        <dd><a href="/user/user_infor.html" target="fm">基本资料</a></dd>
+                        <dd><a href="/user/user_psd.html" target="fm">更换头像</a></dd>
+                        <dd><a href="/user/user_psd.html" target="fm">重置密码</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item"><a href=""><span class="iconfont icon-tuichu"></span>退出</a></li>
@@ -61,9 +56,9 @@
                     <li class="layui-nav-item">
                         <a href="javascript:;"><span class="iconfont icon-user"></span>个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-username"></i>基本资料</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-username"></i>更换头像</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-username"></i>重置密码</a></dd>
+                            <dd><a href="/user/user_infor.html" target="fm"><i class="layui-icon layui-icon-username"></i>基本资料</a></dd>
+                            <dd><a href="/user/user_cover.html" target="fm"><i class="layui-icon layui-icon-username"></i>更换头像</a></dd>
+                            <dd><a href="/user/user_psd.html" target="fm"><i class="layui-icon layui-icon-username"></i>重置密码</a></dd>
                         </dl>
                     </li>
 
@@ -73,7 +68,7 @@
 
         <div class="layui-body">
             <!-- 内容主体区域 -->
-            <iframe src="./home/dashboard.html" name="fm"></iframe>
+            <iframe src="/user/user_psd.html" name="fm"></iframe>
         </div>
 
         <div class="layui-footer">
@@ -81,7 +76,10 @@
             © www.itheima.com -黑马程序员
         </div>
     </div>
-    <script src="./assets/lib/layui/layui.all.js"></script>
+    <script src="/assets/lib/layui/layui.all.js"></script>
+    <script src="/assets/lib/jquery.js"></script>
+    <script src="/assets/js/baseAPI.js"></script>
+    <script src="/assets/js/index.js"></script>
 </body>
 
 </html>
